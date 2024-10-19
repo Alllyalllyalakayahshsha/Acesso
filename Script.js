@@ -1,40 +1,46 @@
-// Inicializa o foguinho da Anne
+// Dados dos usuários
+const usuarios = {
+    "Anne Bella": {
+        ci: "010-12-67-00",
+        senha: "sua_senha", // Coloque a senha que você escolher
+        idade: "10 anos",
+        amigo: "Amiga do coração",
+        foguinho: 34,
+    },
+    "Wesley": {
+        ci: "013-26-78-92",
+        senha: "sua_senha_wesley", // Coloque a senha que você escolher
+        idade: "Idade desconhecida",
+        amigo: "Amigo legítimo",
+        foguinho: "No momento não está disponível",
+    }
+};
 
-let anneFoguinho = localStorage.getItem('anneFoguinho') ? parseInt(localStorage.getItem('anneFoguinho')) : 34;
-
-const today = new Date().toDateString();
-
-const lastUpdate = localStorage.getItem('lastUpdate');
-
-if (lastUpdate !== today) {
-
-    anneFoguinho += 1; // Aumenta em 1 a cada dia
-
-    localStorage.setItem('anneFoguinho', anneFoguinho);
-
-    localStorage.setItem('lastUpdate', today);
-
-}
-
-document.getElementById('formConsulta').onsubmit = function(e) {
-
-    e.preventDefault(); // Impede o envio do formulário
+document.getElementById('login-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // Previne o envio padrão do formulário
 
     const nome = document.getElementById('nome').value.trim();
+    const ci = document.getElementById('ci').value.trim();
+    const senha = document.getElementById('senha').value.trim();
 
-    const senha = document.getElementById('senha').value;
+    // Verifique as credenciais
+    if (usuarios[nome] && usuarios[nome].ci === ci && usuarios[nome].senha === senha) {
+        // Exibe os dados pessoais
+        document.getElementById('dados-pessoais').style.display = 'block';
+        document.getElementById('nome-pessoa').innerText = nome;
+        document.getElementById('idade-pessoa').innerText = "Idade: " + usuarios[nome].idade;
+        document.getElementById('amigo').innerText = usuarios[nome].amigo;
+        document.getElementById('ci-pessoa').innerText = ci;
 
-    // Validação do login e exibição das informações
+        // Atualiza o foguinho
+        const foguinhoAtual = typeof usuarios[nome].foguinho === 'number' ? usuarios[nome].foguinho + 1 : usuarios[nome].foguinho;
+        document.getElementById('foguinho').innerText = foguinhoAtual;
+    } else {
+        alert('Credenciais inválidas. Tente novamente.');
+    }
+});
 
-    if (nome === 'Anne Bella' && senha === '010-12-67-00') {
-
-        document.getElementById('mensagem').innerText = 'Consulta bem-sucedida!';
-
-        document.getElementById('mensagem').style.color = 'green';
-
-        // Exibe as informações da Anne
-
-        const informacoes = `
-
-            <h3>${nome}</h3>
-      
+// Exibir mensagem ao clicar no "Esqueci meu C.I"
+document.getElementById('esqueci-ci').addEventListener('click', function () {
+    alert('Caso esqueça, entre em contato com quem te deu o C.I');
+});
