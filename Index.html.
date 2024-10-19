@@ -1,41 +1,37 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Consulta Amiga</title>
-
     <link rel="stylesheet" href="style.css">
-
+    <title>Página de Login</title>
 </head>
-
 <body>
+    <div class="login-container">
+        <h1>Bem-vindo!</h1>
+        <form id="login-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-    <div class="container-login">
+            <label for="ci">C.I:</label>
+            <input type="text" id="ci" required>
 
-        <h2>Bem-vindo de Volta!</h2>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" required>
 
-        <p>Por favor, clique em "Consulta" para ver os dados.</p>
-
-        <form id="formConsulta">
-
-            <div class="grupo-input">
-
-                <label for="nome">Nome:</label>
-
-                <input type="text" id="nome" placeholder="Digite seu nome" required>
-
-            </div>
-
-            <div class="grupo-input">
-
-                <label for="senha">C.I SENHA:</label>
-
-                <input type="password" id="senha" placeholder="Digite sua C.I SENHA" required>
-
-            </div>
+            <button type="submit">Consulta</button>
+        </form>
+        <p id="esqueci-ci">Esqueci meu C.I</p>
+        <div id="dados-pessoais" style="display: none;">
+            <h2>Dados Pessoais</h2>
+            <p id="nome-pessoa"></p>
+            <p id="idade-pessoa"></p>
+            <p id="amigo"></p>
+            <p>Foguinho: <span id="foguinho"></span></p>
+            <p>C.I: <span id="ci-pessoa"></span></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
