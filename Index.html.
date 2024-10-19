@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Consulta Amiga</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-login">
+
+        <h2>Bem-vindo de Volta!</h2>
+
+        <p>Por favor, clique em "Consulta" para ver os dados.</p>
+
+        <form id="formConsulta">
+
+            <div class="grupo-input">
+
+                <label for="nome">Nome:</label>
+
+                <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+            </div>
+
+            <div class="grupo-input">
+
+                <label for="senha">C.I SENHA:</label>
+
+                <input type="password" id="senha" placeholder="Digite sua C.I SENHA" required>
+
+            </div>
