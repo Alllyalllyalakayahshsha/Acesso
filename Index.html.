@@ -1,37 +1,95 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constituição do Grupo Bagaceira</title>
     <link rel="stylesheet" href="style.css">
-    <title>Página de Login</title>
 </head>
 <body>
-    <div class="login-container">
-        <h1>Bem-vindo!</h1>
-        <form id="login-form">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
+    <header>
+        <h1>Constituição do Grupo Bagaceira</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Preâmbulo</h2>
+            <p> Nós, os integrantes do grupo Bagaceira, unidos pela amizade, confiança e compromisso mútuo, estabelecemos esta constituição com o propósito de garantir a organização, fortalecer os laços entre os membros e promover o bem-estar coletivo. Guiados pelo respeito e pela igualdade, comprometemo-nos a seguir estas regras para alcançar nossos objetivos de forma justa e em harmonia. </p>
+        </section>
 
-            <label for="ci">C.I:</label>
-            <input type="text" id="ci" required>
+        <section>
+            <h2>Art. 1 - Direitos e Deveres</h2>
+            <h3>Direitos dos Membros</h3>
+            <ul>
+                <li>1. Todos têm direito de ser tratados com respeito.</li>
+                <li>2. Todos têm direito de se candidatar a líder.</li>
+                <li>3. Todos têm direito de votar nos dias de eleição.</li>
+                <li>4. Todos têm direito de enviar mensagens, áudios, fotos e vídeos.</li>
+                <li>5. Todos têm direito de participar de chamadas de áudio e vídeo.</li>
+            </ul>
+            <h3>Deveres de Todos os Membros</h3>
+            <ul>
+                <li>6. Todos devem se respeitar e conviver em harmonia.</li>
+                <li>7. Todos têm o dever de votar nos dias de eleição.</li>
+                <li>8. Todos têm o dever de responder todas as enquetes feitas.</li>
+            </ul>
+        </section>
 
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" required>
+        <section>
+            <h2>Art. 2 - Organização Interna ou Estrutura</h2>
+            <p>Os cargos principais do grupo são:</p>
+            <ul>
+                <li><strong>Defensor ou Advogado:</strong> Defende os membros em casos de acusações.</li>
+                <li><strong>Líder ou Presidente:</strong> Aplica as regras e cuida da organização do grupo.</li>
+                <li><strong>Analisador:</strong> Analisa os membros que entram e saem, além de investigar violações das regras.</li>
+            </ul>
+        </section>
 
-            <button type="submit">Consulta</button>
-        </form>
-        <p id="esqueci-ci">Esqueci meu C.I</p>
-        <div id="dados-pessoais" style="display: none;">
-            <h2>Dados Pessoais</h2>
-            <p id="nome-pessoa"></p>
-            <p id="idade-pessoa"></p>
-            <p id="amigo"></p>
-            <p>Foguinho: <span id="foguinho"></span></p>
-            <p>C.I: <span id="ci-pessoa"></span></p>
-        </div>
-    </div>
-    
-    <script src="script.js"></script>
+        <section>
+            <h2>Art. 3 - Alteração na Constituição</h2>
+            <p>1. Esta constituição pode ser alterada com 90% dos votos dos membros presentes.</p>
+        </section>
+
+        <section>
+            <h2>Art. 4 - Análise</h2>
+            <ul>
+                <li>1. Membros que violarem as regras serão analisados, e o processo pode levar de 10 a 20 minutos para determinar culpa ou inocência. A análise ocorre apenas em casos de conflitos, investigando o início e o fim da briga.</li>
+                <li>2. Um membro que desejar sair deve: Procurar um defensor, Apresentar um motivo, Fazer um aviso prévio.</li>
+                <li>3. A entrada de novos membros será analisada com base no nome e idade.</li>
+                <li>4. Caso haja violação de regras, o membro será notificado e punido, se necessário.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Art. 5 - Punições</h2>
+            <ul>
+                <li>1. Após a análise, se a pessoa for considerada culpada, uma punição será aplicada, variando entre advertência e suspensão. A expulsão é extremamente proibida.</li>
+                <li>2. A suspensão não pode ultrapassar 10 dias.</li>
+                <li>3. Um líder que abusa de poder, impondo regras absurdas, pode enfrentar uma eleição de impeachment para perda de liderança.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Art. 6 - Liderança</h2>
+            <ul>
+                <li>1. Para ser líder, é necessário ter responsabilidade para cuidar do grupo e aplicar regras formalmente.</li>
+                <li>2. O mandato de liderança é de 2 semanas, com eleições realizadas ao final desse período.</li>
+                <li>3. O líder não pode alterar a constituição sem 90% de aprovação dos membros.</li>
+                <li>4. O líder não pode aplicar regras absurdas. Caso isso ocorra, será removido da liderança, acusado de abuso de poder e poderá ser suspenso conforme análise.</li>
+                <li>5. O líder não pode alterar a forma de governo do grupo, pois isso será considerado abuso de poder.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Art. 7 - Disposições Finais</h2>
+            <ul>
+                <li>1. Esta constituição pode ser alterada com 90% de aprovação dos membros.</li>
+                <li>2. As regras e leis entram em vigor 1 dia após a confirmação do Defensor Público do grupo.</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Fim da Constituição, finalizada e aprovada no dia 26/11/2024, às 23:29.</p>
+        </footer>
+    </main>
 </body>
 </html>
